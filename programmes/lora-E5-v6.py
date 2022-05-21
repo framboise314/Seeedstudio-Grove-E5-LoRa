@@ -138,7 +138,7 @@ while True :
             # En hexadécimal
             print("temp", temp/10)
             # Conversion au format Cayenne
-            payload = ('0201{:02x}0167{:04x}'.format(capteur, temp))
+            payload = ('0200{:02x}0167{:04x}'.format(capteur, temp))
             print("payload : ", payload)
             commande= "AT+CMSGHEX="+payload +""
             print ("Commande : ", commande)
